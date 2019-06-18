@@ -9,6 +9,11 @@ When you start a scene, it goes through a set lifecycle, using these methods:
 -   `create()` is called when you're ready to start the scene.
 -   `update()` is called every frame.
 
+## update()
+
+Phaser tries to achieve a frame rate of 60fps, but the actual framerate
+depends on your device.
+
 <!--
 0---|--10|----|--20|----|--30|----|--40|----|--50|----|--60|----|--70|----|--80|
 -->
