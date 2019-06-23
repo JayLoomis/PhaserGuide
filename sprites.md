@@ -1,6 +1,22 @@
 # Sprites
 
+Phaser provides a Sprite class to manage data about your sprites. The core of
+a sprite object is the texture (bitmap) that it uses. OInce create, you can use
+the properties and methods of the sprite object to:
+
+-   Manually scale, rotate, and otherwise transform the sprite.
+-   Move the sprite within the scene.
+
+The transformations available through the object are instantaneous, changing
+the sprite from its current state to a new one as soon as you change the values.
+You can create animations and effects by adjusting properties over time, but if
+what you want is a procedural animation, you should use a Tween.
+
 Sprites in Phaser are asociated with scenes.
+
+<!--
+0---|--10|----|--20|----|--30|----|--40|----|--50|----|--60|----|--70|----|--80|
+-->
 
 Here's how you make one (with an image that you've preloaded for the scene):
 
@@ -56,8 +72,3 @@ Positive angles are clockwise.
 
 You can also set `sprite.rotation` or call `sprite.setRotation()` to use radians
 instead of degrees.
-
-
-<!--
-0---|--10|----|--20|----|--30|----|--40|----|--50|----|--60|----|--70|----|--80|
--->
